@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+	</style>
+	<script type="text/javascript">
+		  function enviar() {          
+		  	document.getElementById('campoSeleccionado').value = document.getElementById('comboSeleccion').value;      }
+		
+	</script>
+</head>
+<body>
+	<form>               
+		<select id="comboSeleccion" onchange="enviar()">  
+			<option disabled selected>Seleccione una opcion, por favor</option> 
+			<option value="1">Opcion 1</option>   
+			<option value="2">Opcion 2</option>       
+		</select>       
+		<input type="text" id="campoSeleccionado">        
+	</form>   
+	
+</body>
+</html>
